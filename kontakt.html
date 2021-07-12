@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sea and Travel | Kontakt</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="img_container">
+                <img src="images/logo.png" alt="Logo der Firma Sea and Travel" id="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="kuesten.html">Küsten</a> </li>
+                    <li> <a href="wanderungen.html">Wanderungen</a> </li>
+                    <li> <a href="naturbeobachtungen.html">Naturbeobachtungen</a> </li>
+                    <li> <a href="kontakt.html">Kontakt</a> </li>
+                    <li> <a href="kontakt.html">Impressum</a> </li>
+                </ul>
+            </nav>
+
+            <img src="images/04_norway_sea.jpg" alt="Norwegens Küsten">
+            <h1>Sea and Travel - Reisen, Wandern, Erleben</h1>
+        </header>
+        <main>
+            <article class="container">
+                <div class="item">
+                    <h2>Kontaktformular</h2>
+                    <form id="form-termin" action="rueckmeldung.php" method="post">
+                        <fieldset class="data">
+                            <legend>Ihre Kontaktdaten</legend>
+                            <p>
+                                <input id="vorname" name="vorname" type="text" title="Vorname" required/>
+                                <label for="vorname">Vorname</label>
+                            </p>
+                            <p>
+                                <input id="nachname" name="nachname" type="text" title="Nachname" required/>
+                                <label for="nachname">Nachname</label>
+                            </p>
+                            <p>
+                                <input id="email" type="email" name="email" placeholder="email@example.org" required/> 
+                                <label for="email">E-Mail</label>
+                            </p>
+
+                            <p>
+                                <input id="phone" name="phone" type="tel"  placeholder="nur Zahlen erlaubt" />
+                                <label for="phone">Telefonnummer</label>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Reiseziel</legend>
+                            <p><input type="radio" name="rziel" id="schottland" value="schottland"                                checked="checked"> 
+                                <label for="schottland">Wandern in Schottland</label><br>
+                                <input type="radio" name="rziel" id="norwegen" value="norwegen">
+                                <label for="norwegen">Wandern in Norwegen</label><br>
+                                <input type="radio" name="rziel" id="schweden" value="schweden">
+                                <label for="schweden">Wandern in Schweden</label><br>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Hotelkategorie</legend>
+
+                            <p><input type="radio" name="htyp" value="Drei" id="drei"
+                                      checked="checked"> 
+                                <label for="drei">Drei-Sterne-Hotel</label>
+                                <input type="radio" name="htyp" value="Vier" id="vier"
+                                       > 
+                                <label for="vier">Vier-Sterne-Hotel</label>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Verpflegung</legend>
+                            <p><select name="verpflegung">
+                                <option value="selbstversorgung"> Selbstversorgung</option>
+                                <option value="halbpension" selected="selected">
+                                    Halbpension</option>
+                                <option value="vollpension">
+                                    Vollpension </option>
+                                </select> </p>
+
+
+                        </fieldset>
+                        <fieldset class="message">
+                            <legend>Was Sie uns mitzuteilen haben</legend>
+                            <p>
+                                <textarea name="comments" id="comments" cols="45" rows="5" maxlength="1000"></textarea>
+                                <label for="comments">Ihre Nachricht</label>
+                            </p>
+                        </fieldset>
+                        <fieldset class="buttons">
+                            <button type="submit">Absenden</button>
+                            <button type="reset">Eingaben löschen</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="item">
+                    <h2>Impressum</h2>
+                    <p>Sea &amp; Travel Reisen</p>
+                    <p>Danziger Straße 6</p>
+                    <p>71034 Böblingen</p>
+                    <p>Telefon: 07031 332211</p>
+                    <p>E-Mail: info@seaandtravel.de</p>
+                </div>
+            </article>
+
+        </main>
+        <footer>
+            <p><strong>Sea  &amp; Travel</strong> &#124; Telefon: 07125-3265-0 &#124; 
+
+            </p>
+        </footer>
+    </body>
+</html>
